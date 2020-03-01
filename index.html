@@ -10,6 +10,8 @@
     <!-- Bootstrap css cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- AOS cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -90,10 +92,10 @@
 
     <!-- container容器 -->
     <div class="container">
-        <h1 class="text-center py-5">關於我</h1>
+        <h1 class="text-center py-5" data-aos="fade-up" data-aos-duration="2000">關於我</h1>
         <!-- 三個卡片區塊 -->
         <div class="card-group">
-            <div class="card border-0 border-0 p-2 text-center card-content">
+            <div class="card border-0 border-0 p-2 text-center card-content" data-aos="fade-right" data-aos-duration="2000">
                 <img src="./img/card01.jpg" class="card-img-top img-style" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -102,7 +104,7 @@
                 </div>
 
             </div>
-            <div class="card border-0 p-2 text-center card-content">
+            <div class="card border-0 p-2 text-center card-content" data-aos="fade-up" data-aos-duration="2000">
                 <img src="./img/card02.jpg" class="card-img-top img-style" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -111,7 +113,7 @@
                 </div>
 
             </div>
-            <div class="card border-0 p-2 text-center card-content">
+            <div class="card border-0 p-2 text-center card-content" data-aos="fade-left" data-aos-duration="2000">
                 <img src="./img/card03.jpg" class="card-img-top img-style" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -122,7 +124,7 @@
             </div>
         </div>
         <button type="button"
-            class="btn btn-primary d-block mx-auto my-1 px-4 py-2 text-white bg-secondary border-0">看更多</button>
+            class="btn btn-primary d-block mx-auto my-1 px-4 py-2 text-white bg-secondary border-0" data-aos="flip-up"  data-aos-duration="600">看更多</button>
     </div>
     <!-- 有灰色背景區塊 -->
     <div class="gray bg-light my-5">
@@ -130,9 +132,9 @@
             <h1 class="text-center py-5">聯絡我們</h1>
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-3">
-                    <img src="./img/phone.png" alt="手機" class="w-100">
+                    <img src="./img/phone.png" alt="手機" class="w-100" data-aos="fade-right">
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-9">
+                <div class="col-sm-12 col-md-12 col-lg-9" data-aos="fade-left">
                     <div class="content-box d-inline-flex">
                         <img src="./img/icon01.png" alt="" class="p-2 w-10">
                         <div class="p-3">
@@ -170,7 +172,14 @@
     <div class="container">
         <h1 class="text-center py-2">聯絡我</h1>
         <p class="p-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore commodi doloremque reiciendis saepe laboriosam quo voluptates! In officia sapiente similique dolor eius odio, hic explicabo, ratione asperiores officiis, mollitia a. Dolorem alias, aliquam architecto placeat assumenda aperiam ipsum laboriosam quasi eius optio accusamus voluptas aut velit atque, quaerat sit? Autem qui, quos reiciendis cupiditate neque similique tempore totam eius porro mollitia deserunt voluptatum tempora nihil hic sequi saepe, numquam eligendi! Omnis amet veritatis qui reiciendis. Qui repudiandae ducimus, molestias quod obcaecati mollitia excepturi animi sint, quam expedita nihil, praesentium beatae eum officiis veritatis suscipit dolor. Nobis minima magni odio minus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore commodi doloremque reiciendis saepe
+            laboriosam quo voluptates! In officia sapiente similique dolor eius odio, hic explicabo, ratione asperiores
+            officiis, mollitia a. Dolorem alias, aliquam architecto placeat assumenda aperiam ipsum laboriosam quasi
+            eius optio accusamus voluptas aut velit atque, quaerat sit? Autem qui, quos reiciendis cupiditate neque
+            similique tempore totam eius porro mollitia deserunt voluptatum tempora nihil hic sequi saepe, numquam
+            eligendi! Omnis amet veritatis qui reiciendis. Qui repudiandae ducimus, molestias quod obcaecati mollitia
+            excepturi animi sint, quam expedita nihil, praesentium beatae eum officiis veritatis suscipit dolor. Nobis
+            minima magni odio minus.
         </p>
         <button type="button"
             class="btn btn-primary d-block mx-auto my-5 px-4 py-2 text-white bg-secondary border-0">看更多</button>
@@ -202,6 +211,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- Aos JS cdn -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
