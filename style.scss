@@ -2,3 +2,45 @@
 *{
     font-family: 'Noto Sans Gothic',sans-serif;
 }
+
+  
+// 修改 boostrap
+.card{
+    display: block;
+}
+
+// 自己的樣式
+.img-style {
+    border-radius: 50% !important;
+    width: 250px !important;
+    height: 250px !important;
+    object-fit: cover;
+    box-sizing: content-box;
+    opacity: 1;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+
+// RWD
+// >= 1024
+@media screen and (min-width: 1024px) {
+    .carousel-inner {
+        height: 94vh;
+
+        .carousel-caption {
+            bottom: 300px;
+        }
+    }
+}
+
+// >= 1200
+@media screen and (min-width: 1200px) {
+    .carousel-inner {
+        .carousel-caption {
+            bottom: 450px;
+        }
+    }
+}

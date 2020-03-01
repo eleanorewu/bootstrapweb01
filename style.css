@@ -2,4 +2,38 @@
 * {
   font-family: 'Noto Sans Gothic',sans-serif;
 }
+
+.card {
+  display: block;
+}
+
+.img-style {
+  border-radius: 50% !important;
+  width: 250px !important;
+  height: 250px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  opacity: 1;
+}
+
+.img-style:hover {
+  opacity: 0.6;
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-inner {
+    height: 94vh;
+  }
+  .carousel-inner .carousel-caption {
+    bottom: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-inner .carousel-caption {
+    bottom: 450px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
